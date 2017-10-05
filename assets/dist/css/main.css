@@ -491,20 +491,20 @@ img.latex {
   display: flex;
   font-size: 0.75rem;
   padding: 0.1875rem;
+  position: relative;
 }
 
-.social-button__icon {
-  float: left;
-  margin-right: 0.3125rem;
-}
-
-.social-button__icon img {
-  display: block;
+.social-button::before {
+  background-image: url("../../images/facebook.svg");
+  content: '';
+  display: inline-block;
+  height: 1.5625rem;
+  width: 1.5625rem;
 }
 
 .social-button__text {
   color: #232323;
-  padding-right: 1.25rem;
+  padding: 0 1.25rem 0 0.3125rem;
 }
 
 .dropdown__link {
