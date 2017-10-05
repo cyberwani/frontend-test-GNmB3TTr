@@ -82,9 +82,14 @@
 }
 
 .author-card__bio p {
+	font-size: 18px;
 	max-height: 100px;
 	overflow: hidden;
 	transition: max-height 0.5s $base-timing;
+
+	@media ( query( min, tablet ) ) {
+		font-size: 16px;
+	}
 
 	&::after {
 		background: linear-gradient( to top, #fff, rgba( 255, 255, 255, 0.6 ) );

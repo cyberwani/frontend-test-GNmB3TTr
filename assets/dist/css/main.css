@@ -405,9 +405,16 @@ img.latex {
 }
 
 .author-card__bio p {
+  font-size: 1.125rem;
   max-height: 6.25rem;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
+}
+
+@media (min-width: 48rem) {
+  .author-card__bio p {
+    font-size: 1rem;
+  }
 }
 
 .author-card__bio p::after {
