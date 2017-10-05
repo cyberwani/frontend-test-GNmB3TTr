@@ -54,6 +54,8 @@
 }
 
 .author-card__title {
+	font-size: 32px;
+	line-height: 38px;
 	margin-bottom: $base-spacing/2;
 
 	@media ( query( min, tablet ) ) {
@@ -118,11 +120,28 @@
 }
 
 .author-card__trigger {
+	height: 35px;
 	position: absolute;
 	left: 50%;
 	transform: translateX( -50% );
 	transition: opacity 0.5s $base-timing;
+	width: 37px;
 	z-index: z( 'mountain' );
+
+	&::after {
+		background-image: url( '../../images/arrowcircle.png' );
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: '';
+		height: 100%;
+		left: 50%;
+		opacity: 1;
+		position: absolute;
+		top: 50%;
+		transform: translate( -50%, -50% );
+		width: 100%;
+	}
 
 	img {
 		display: block;
