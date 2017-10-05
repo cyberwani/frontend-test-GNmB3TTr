@@ -1,10 +1,10 @@
 .author-card {
-	padding: $base-spacing/2;
+	padding: $small-spacing;
 
 	@media ( query( min, tablet ) ) {
 		align-items: center;
 		display: flex;
-		padding: $base-spacing/2 0;
+		padding: $small-spacing 0;
 	}
 
 	@media ( query( min, desktop ) ) {
@@ -56,7 +56,7 @@
 .author-card__title {
 	font-size: 32px;
 	line-height: 38px;
-	margin-bottom: $base-spacing/2;
+	margin-bottom: $small-spacing;
 
 	@media ( query( min, tablet ) ) {
 		margin-bottom: 0;
@@ -75,7 +75,7 @@
 	margin: $medium-spacing 0 $small-spacing;
 
 	@media ( query( min, tablet ) ) {
-		margin: $base-spacing/2 0;
+		margin: $small-spacing 0;
 	}
 }
 
