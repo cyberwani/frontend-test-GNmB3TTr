@@ -11,10 +11,16 @@
 <body>
 	<div class="wrap" itemscope itemtype="https://schema.org/CreativeWork">
 		<div class="author-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
-			<figure class="author-card__image">
-				<img src="assets/images/headshot.jpg" srcset="assets/images/headshot.jpg 1x, assets/images/headshot@2x.jpg 2x"
-				 alt="Image of Mister Name" itemprop="image">
-			</figure>
+			<picture class="author-card__image">
+				<source
+					media="(min-width: 768px)"
+					srcset="assets/images/headshot.jpg,
+							assets/images/headshot@2x.jpg 2x">
+				<img
+					src="assets/images/headshot.jpg"
+					srcset="assets/images/headshot_mobile.jpg 1x,
+							assets/images/headshot_mobile@2x.jpg 2x">
+			</picture>
 			<div class="author-card__info">
 				<header class="author-card__header">
 					<h2 class="author-card__title" itemprop="name">Mister Name</h2>
