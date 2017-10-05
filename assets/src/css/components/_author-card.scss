@@ -70,7 +70,7 @@
 }
 
 .author-card__meta {
-	margin: $base-spacing 0 $base-spacing/2;
+	margin: $medium-spacing 0 $small-spacing;
 
 	@media ( query( min, tablet ) ) {
 		margin: $base-spacing/2 0;
