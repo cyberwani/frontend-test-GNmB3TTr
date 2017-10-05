@@ -1,0 +1,22 @@
+.social-button {
+	align-items: center;
+	background: $light-gray;
+	border-radius: 20px;
+	display: flex;
+	font-size: 12px;
+	padding: 3px;
+}
+
+.social-button__icon {
+	float: left;
+	margin-right: 5px;
+
+	img {
+		display: block;
+	}
+}
+
+.social-button__text {
+	color: $black;
+	padding-right: 20px;
+}

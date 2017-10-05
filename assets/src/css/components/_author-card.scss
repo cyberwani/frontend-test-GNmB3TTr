@@ -1,0 +1,133 @@
+.author-card {
+	padding: $base-spacing/2;
+
+	@media ( query( min, tablet ) ) {
+		align-items: center;
+		display: flex;
+		padding: $base-spacing/2 0;
+	}
+
+	@media ( query( min, desktop ) ) {
+		padding: $base-spacing;
+	}
+}
+
+.author-card__image {
+	margin-bottom: 10px;
+
+	@media ( query( min, tablet ) ) {
+		flex: 1;
+		margin: 0;
+		order: 2;
+	}
+
+	img {
+		border-radius: 50%;
+		display: block;
+		height: 75px;
+		margin: 0 auto;
+		width: 75px;
+
+		@media ( query( min, tablet ) ) {
+			border-radius: 0;
+			height: auto;
+			max-height: 160px;
+			width: auto;
+		}
+	}
+}
+
+.author-card__info {
+	@media ( query( min, tablet ) ) {
+		flex: 2;
+	}
+}
+
+.author-card__header {
+	text-align: center;
+
+	@media ( query( min, tablet ) ) {
+		align-items: center;
+		display: flex;
+		text-align: left;
+	}
+}
+
+.author-card__title {
+	margin-bottom: $base-spacing/2;
+
+	@media ( query( min, tablet ) ) {
+		margin-bottom: 0;
+	}
+}
+
+.author-card__social {
+	display: inline-block;
+
+	@media ( query( min, tablet ) ) {
+		margin-left: 10px;
+	}
+}
+
+.author-card__meta {
+	margin: $base-spacing 0 $base-spacing/2;
+
+	@media ( query( min, tablet ) ) {
+		margin: $base-spacing/2 0;
+	}
+}
+
+.author-card__bio {
+	position: relative;
+}
+
+.author-card__bio p {
+	max-height: 100px;
+	overflow: hidden;
+	transition: max-height 0.5s $base-timing;
+
+	&::after {
+		background: linear-gradient( to top, #fff, rgba( 255, 255, 255, 0.6 ) );
+		bottom: 0;
+		content: '';
+		height: 50px;
+		left: 0;
+		position: absolute;
+		right: 0;
+		width: 100%;
+		z-index: z( 'hill' );
+
+		@media ( query( min, tablet ) ) {
+			display: none;
+		}
+	}
+}
+
+.author-card__bio--is-open p {
+	max-height: 1000px;
+	overflow: visible;
+
+	&::after {
+		display: none;
+	}
+}
+
+.author-card__trigger {
+	position: absolute;
+	left: 50%;
+	transform: translateX( -50% );
+	transition: opacity 0.5s $base-timing;
+	z-index: z( 'mountain' );
+
+	img {
+		display: block;
+	}
+
+	.author-card__bio--is-open & {
+		opacity: 0;
+	}
+
+	@media ( query( min, tablet ) ) {
+		display: none;
+	}
+}
