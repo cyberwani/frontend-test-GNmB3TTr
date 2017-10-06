@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>XWP Test</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/dist/css/main.css">
 </head>
-<body>
 
-	<h1>Good luck!</h1>
-	<img src="https://i.imgur.com/Q3cUg29.gif" width="640" height="480" alt="CSS is awesome">
-	<h2>A good place to start is the README file.</h2>
+<body>
+	<div class="wrap" itemscope itemtype="https://schema.org/CreativeWork">
+		<div class="author-card" itemprop="author" itemscope itemtype="https://schema.org/Person">
+			<picture class="author-card__image">
+				<source
+					media="(min-width: 768px)"
+					srcset="assets/images/headshot.jpg,
+							assets/images/headshot@2x.jpg 2x">
+				<img
+					src="assets/images/headshot.jpg"
+					srcset="assets/images/headshot_mobile.jpg 1x,
+							assets/images/headshot_mobile@2x.jpg 2x">
+			</picture>
+			<div class="author-card__info">
+				<header class="author-card__header">
+					<h2 class="author-card__title" itemprop="name">Mister Name</h2>
+					<div class="author-card__social">
+						<a href="#!" class="social-button social-button__facebook">
+							<span class="social-button__text">Follow on Facebook</span>
+						</a>
+					</div>
+				</header>
+				<div class="author-card__meta">
+					<a href="" class="dropdown__link">2 New Stories</a>
+				</div>
+				<div id="author-card__bio" class="author-card__bio" itemprop="description">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</p>
+					<button id="author-card__trigger" class="author-card__trigger">
+						<span class="screen-reader-text">Toggle Bio</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="assets/dist/js/main.js" async></script>
 </body>
+
 </html>

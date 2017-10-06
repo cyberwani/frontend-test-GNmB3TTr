@@ -1,0 +1,25 @@
+.dropdown__link {
+	align-items: center;
+	color: $blue;
+	font-size: 0.825em;
+	display: flex;
+	text-decoration: none;
+	transition: color $base-duration $base-timing;
+
+	&::after {
+		background-image: url( '../../images/down.svg' );
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		display: block;
+		height: 8px;
+		margin-left: 5px;
+		width: 14px;
+	}
+
+	&:hover {
+		color: darken( $blue, 10 );
+		text-decoration: none;
+	}
+}

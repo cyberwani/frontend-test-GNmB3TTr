@@ -1,0 +1,22 @@
+.social-button {
+	align-items: center;
+	background: $light-gray;
+	border-radius: 20px;
+	display: flex;
+	font-size: 12px;
+	padding: 3px;
+	position: relative;
+
+	&::before {
+		background-image: url( '../../images/facebook.svg' );
+		content: '';
+		display: inline-block;
+		height: 25px;
+		width: 25px;
+	}
+}
+
+.social-button__text {
+	color: $black;
+	padding: 0 20px 0 5px;
+}

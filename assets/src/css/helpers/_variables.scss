@@ -26,3 +26,14 @@ $z-layers: (
 	'default': 1,
 	'depression': -100
 );
+
+$black: #232323;
+$light-gray: #ebebeb;
+$blue: #55acee;
+
+$base-spacing: 40px;
+$medium-spacing: $base-spacing - 10;
+$small-spacing: $base-spacing/2;
+
+$base-duration: 0.3s;
+$base-timing: ease-in-out;
